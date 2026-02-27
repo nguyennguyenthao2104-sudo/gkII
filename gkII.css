@@ -1,0 +1,144 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: black;
+    color: white;
+}
+
+.header nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.header nav a:hover {
+    color: #ff6600;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #f4f4f4;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #ff6600;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background: white;
+}
+
+.feature {
+    text-align: center;
+}
+
+/* PRODUCTS */
+.products,
+.new-products {
+    padding: 60px;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.product {
+    padding: 15px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+/* SMALL BANNER */
+.small-banner {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 60px;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    text-align: center;
+    padding: 60px;
+}
+
+.newsletter-box {
+    margin-top: 20px;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 250px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background: #ff6600;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* ===== FIX SIZE IMAGE PRODUCT ===== */
+
+.product {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    overflow: hidden; /* Ẩn phần ảnh dư */
+}
+
+.product img {
+    width: 100%;
+    height: 220px;     
+    object-fit: contain;   /* Không cắt ảnh */
+    background: #f9f9f9;   /* nền phía sau cho đẹp */
+    padding: 10px;         /* tạo khoảng cách */
+}
